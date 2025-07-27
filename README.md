@@ -1,39 +1,48 @@
 # Wristo-E-commerce-Watch-Website
-Wristo is a responsive e-commerce website for premium watches. Users can browse collections, view product details, and add items to the cart with a smooth and interactive UI.
+Wristo is a full-stack e-commerce website built with a modern tech stack. It features a responsive and interactive frontend with JavaScript and a robust backend using Spring Boot and PostgreSQL. The application allows users to browse premium watches, add them to the cart, update quantities, and proceed to checkout.
 
 ## 🛠️ Tech Stack
 
-- **HTML** – For webpage structure  
-- **CSS** – For styling and layout  
-- **JavaScript** – For cart functionality and dynamic interactions
+### Frontend:
+- HTML  
+- CSS  
+- JavaScript  
+
+### Backend:
+- Java (Spring Boot)  
+- Spring MVC, Spring Data JPA  
+- PostgreSQL (Database)  
+- REST APIs (for cart and product management)
 
 ## 🎯 Key Features
 
-- ✅ **Product Listings** – Watch collections displayed with images, names, and prices  
-- 🛒 **Add to Cart** – Users can add items to the cart directly from the homepage or product list  
-- ➕➖ **Quantity Management** – Increase or decrease product quantity in cart  
-- 💰 **Total Price Calculation** – Updates in real-time as cart changes  
-- 📦 **Checkout Button** – Ready for integration with payment gateway  
-- 🔘 **Discover**, **Shop Now** buttons – Fully functional and linked to respective sections  
-- 📱 **Responsive Design** – Works well on mobile, tablet, and desktop devices
+- ✅ Product catalog with images, names, and prices  
+- 🛒 Add to Cart and Remove from Cart  
+- ➕➖ Quantity update with real-time total updates  
+- 📤 Checkout functionality connected to backend  
+- 📦 Cart and order data stored in PostgreSQL  
+- 🌐 REST API built with Spring Boot (CRUD operations)  
+- 🔘 Discover and Shop Now buttons are functional  
+- 📱 Responsive design for all devices  
 
 
 
-1. Open the Git Repository
+## ▶️ How to Run the Project
 
-2. Open `index.html` in your browser.
+### Frontend:
+1. Open `index.html` in your browser.
+2. Use the UI to view watches, add to cart, and check totals.
 
-3. Browse watches, add to cart, and test the full e-commerce functionality.
+### Backend (Spring Boot + PostgreSQL):
+1. Import the Spring Boot project in IntelliJ/Eclipse.
+2. Configure `application.properties` with your PostgreSQL credentials:
+   ```properties
+   spring.datasource.url=jdbc:postgresql://localhost:5432/wristo_db
+   spring.datasource.username=your_username
+   spring.datasource.password=your_password
+   spring.jpa.hibernate.ddl-auto=update
 
----
 
-## ✅ Status
-
-- Fully functional static e-commerce frontend  
-- All buttons and cart logic implemented  
-- Ready for backend integration (optional)
-
----
 
 ## 👨‍💻 Author
 
