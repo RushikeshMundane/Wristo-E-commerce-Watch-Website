@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Checkout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #f9f9f9;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      box-sizing: border-box;
+    }
+    #payment-options {
+      margin-top: 2rem;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      background: white;
+      display: none; /* hidden initially */
+    }
+  
+    .payment-method {
+      margin: 0.5rem 0;
+      cursor: pointer;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .payment-method:hover {
+      background-color: #eee;
+    }
+    #confirm-btn {
+      margin-top: 2rem;
+      padding: 0.8rem 1.5rem;
+      font-size: 1.1rem;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Checkout</h1>
+
+  <section id="order-summary">
+    <h2>Order Summary</h2>
+    <div id="summary-items"></div>
+    <p><strong>Total: </strong><span id="summary-total">₹0.00</span></p>
+  </section>
+
+  <section id="shipping-address">
+    <h2>Shipping Address</h2>
+    <label for="name">Full Name</label>
+    <input type="text" id="name" placeholder="Your full name" required />
+    
+    <label for="address">Address</label>
+    <textarea id="address" rows="3" placeholder="Street, city, state, ZIP" required></textarea>
+    
+    <label for="phone">Phone Number</label>
+    <input type="tel"  id="phone" placeholder="Your phone number" required pattern="[0-9]{10}" maxlength="10" inputmode="numeric"/>
+  </section>
+
+  <button id="confirm-btn">Confirm Order</button>
+
+  <section id="payment-options">
+    <h2>Payment Options</h2>
+    <div class="payment-method" onclick="selectPayment('UPI')">📲 UPI</div>
+    <div class="payment-method" onclick="selectPayment('Net Banking')">🏦 Net Banking</div>
+    <div class="payment-method" onclick="selectPayment('Cash on Delivery')">💵 Cash on Delivery</div>
+
+    <div id="payment-form" style="margin-top: 20px;"></div>
+    <div id="barcode" style="margin-top:20px;"></div>
+  </section>
+
+  <script src="checkout.js"></script>
+</body>
+</html>

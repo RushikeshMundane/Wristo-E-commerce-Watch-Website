@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Explore Products</title>
+  <link rel="stylesheet" href="final.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  
+  <style>
+    .products-grid {
+      width: 80%;
+      margin: 2rem auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    .product-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .product-card {
+      background: var(--light-grey);
+      padding: 1rem;
+      text-align: center;
+      border-radius: 6px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    .product-image {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+    }
+
+    .product-name {
+      font-weight: 600;
+      color: var(--dark-blue);
+      margin-bottom: 0.5rem;
+    }
+
+    .product-price {
+      font-weight: 500;
+      color: var(--dark-grey);
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 800px) {
+      .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .products-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Wristo</div>
+    <ul class="navlinks" id="navlinks">
+      <li><a href="Final.html">Home</a></li>
+      <li><a href="Explore.html" class="active">Explore</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </nav>
+
+  <section>
+    <h1 style="text-align:center; margin:2rem 0;">Explore Our Products</h1>
+    <div class="products-grid">
+
+      <a href="Productdetail.html?id=rado-watch" class="product-link">
+        <div class="product-card">
+          <img src="Images/rado-2.avif" alt="Rado Watch" class="product-image" />
+          <div class="product-name">Rado Watch</div>
+          <div class="product-price">₹1,03,889</div>
+        </div>
+      </a>
+
+      <a href="Productdetail.html?id=jacob-co" class="product-link">
+        <div class="product-card">
+          <img src="Images/Jacob & Co Astronomia.webp" alt="Jacob & Co Astronomia" class="product-image" />
+          <div class="product-name">Jacob & Co </div>
+          <div class="product-price">₹4,32,872</div>
+        </div>
+      </a>
+
+      <a href="Productdetail.html?id=tissot-watch" class="product-link">
+        <div class="product-card">
+          <img src="Images/tissot-t.avif" alt="Tissot Watch" class="product-image" />
+          <div class="product-name">Tissot Watch</div>
+          <div class="product-price">₹77,917</div>
+        </div>
+      </a>
+
+      <a href="Productdetail.html?id=cartier-watch" class="product-link">
+        <div class="product-card">
+          <img src="Images/cartier watch.jpg" alt="Cartier Watch" class="product-image" />
+          <div class="product-name">Cartier Watch</div>
+          <div class="product-price">₹3,89,585</div>
+        </div>
+      </a>
+
+      <!-- Second row -->
+
+      <a href="Productdetail.html?id=omega-watch" class="product-link">
+        <div class="product-card">
+          <img src="Images/Omega_2.webp" alt="Omega Watch" class="product-image" />
+          <div class="product-name">Omega Watch</div>
+          <div class="product-price">₹95,232</div>
+        </div>
+      </a>
+
+      <a href="Productdetail.html?id=police-watch" class="product-link">
+        <div class="product-card">
+          <img src="Images/police.webp" alt="Police Watch" class="product-image" />
+          <div class="product-name">Police Watch</div>
+          <div class="product-price">₹30,301</div>
+        </div>
+      </a>
+
+      <a href="Productdetail.html?id=patek-philippe" class="product-link">
+        <div class="product-card">
+          <img src="Images/Patek-Philippe-Nautilus.webp" alt="Patek Philippe" class="product-image" />
+          <div class="product-name">Patek Philippe</div>
+          <div class="product-price">₹30,301</div>
+        </div>
+      </a>
+
+      <a href="Productdetail.html?id=rolex-watch" class="product-link">
+        <div class="product-card">
+          <img src="Images/Rolex 2.webp" alt="Rolex Watch" class="product-image" />
+          <div class="product-name">Rolex Watch</div>
+          <div class="product-price">₹30,301</div>
+        </div>
+      </a>
+      
+      <a href="Productdetail.html?id=rolex-oyster" class="product-link">
+        <div class="product-card">
+          <img src="Images/Rolex 12.avif" alt="Rolex Oyster" class="product-image"  />
+          <div class="product-name">Rolex Oyster</div>
+          <div class="product-price">₹40,25,717</div>
+        </div>
+      </a>
+
+       <a href="Productdetail.html?id=tissot-1853" class="product-link">
+        <div class="product-card">
+          <img src="Images/tissot-t.avif" alt="Tissot 1853" class="product-image" />
+          <div class="product-name">Tissot 1853</div>
+          <div class="product-price">₹3,45,259</div>
+        </div>
+      </a>
+
+      <a href="Productdetail.html?id=klassc-14" class="product-link">
+        <div class="product-card">
+          <img src="Images/Klassc.png" alt="Klassc-14" class="product-image" />
+          <div class="product-name">klassc-14</div>
+          <div class="product-price">₹29,42,496</div>
+        </div>
+      </a>
+
+      <a href="Productdetail.html?id=citizen" class="product-link">
+        <div class="product-card">
+          <img src="Images/citizen.png" alt="Citizen" class="product-image" />
+          <div class="product-name">Citizen watch</div>
+          <div class="product-price">₹29,42,496</div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+
+
+   <footer class="custom-footer">
+  <div class="footer-top">
+    <div class="footer-about">
+      <h3>About Wristo</h3>
+      <p>Wristo offers premium watches for every style. From classic timepieces to smart wearables, we blend elegance and innovation to keep you on time and on trend.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <a href="Final.html">Home</a>
+      <a href="#about">About</a>
+      <a href="Explore.html">Explore</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>📞 +91 9876543210</p>
+      <p>📧 support@wristo.com</p>
+      <p>📍 Nagpur, Maharashtra, India</p>
+    </div>
+
+    <div class="footer-newsletter">
+      <h3>Subscribe to Our Newsletter</h3>
+      <form action="#" method="post">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-social">
+       <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <div class="footer-policy">
+      <a href="terms.html">Terms & Conditions</a> |
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+
+    <p class="footer-copy">© 2025 Wristo. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <script src="final.js"></script>
+</body>
+</html>
+
+
